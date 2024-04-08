@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-  REPO_NAME: "inwpuun/kaumtongharm-socket"
+  REPO_NAME: "Brucennnnn/kaumtongharm-socket"
   PROJECT_NAME: "kaumtongharm-socket"
-  IMAGE_NAME: "ghcr.io/inwpuun/kaumtongharm-socket"
+  IMAGE_NAME: "ghcr.io/Brucennnnn/kaumtongharm-socket"
 
 jobs:
   build-and-deploy:
