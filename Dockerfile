@@ -1,15 +1,15 @@
-FROM node:20-alpine
+FROM node:20-alpine AS dep
 
-WORKDIR /
+WORKDIR /app
 COPY package*.json  ./
 
 RUN npm install
 
 FROM node:20-alpine
 
-WORKDIR /
+WORKDIR /app
 
-COPY --from=dep /node_modules /node_modules
+COPY --from=dep /app/node_modules /app/node_modules
 
 COPY . .
 
